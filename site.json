@@ -1,0 +1,37 @@
+{
+  "name": "The Office of Ross and Gibson",
+  "short": "Ross and Gibson",
+  "tagline": "Private Investigations",
+  "url": "https://www.torgpi.com",
+  "phone": "(602) 499-3230",
+  "phone_tel": "+16024993230",
+  "email": "hello@torgpi.com",
+  "street": "4015 N 15th Ave",
+  "city": "Phoenix",
+  "region": "AZ",
+  "zip": "85015",
+  "agency_license": "1759360",
+  "geo": [
+    33.4925,
+    -112.0931
+  ],
+  "form_action": "https://formsubmit.co/hello@torgpi.com",
+  "cta_href": "https://www.torgpi.com/contact/",
+  "cta_label": "Free Consultation",
+  "cta_head": "Need answers? Start with a confidential conversation.",
+  "cta_copy": "Tell us what's going on. We'll tell you honestly whether an investigation can help, what it will take, and what it will cost — before any work begins.",
+  "blog_head": "Insights from a licensed Arizona investigator.",
+  "blog_desc": "Plain-English guidance on surveillance, skip tracing, background checks, fraud and what private investigators can legally do in Arizona.",
+  "author": {
+    "name": "Anthony Romero",
+    "initials": "AR",
+    "jobTitle": "Founder & Qualifying Party, The Office of Ross and Gibson",
+    "url": "https://www.torgpi.com/about/",
+    "bio": "U.S. Air Force veteran, co-founder of Credit4Vets, and founder of The Office of Ross and Gibson, an Arizona-licensed private investigation agency in Phoenix.",
+    "sameAs": [
+      "https://www.linkedin.com/in/anthony-romero-12975784/",
+      "https://credit4vets.org/"
+    ]
+  },
+  "org_sameas": []
+}

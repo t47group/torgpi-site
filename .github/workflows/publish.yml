@@ -1,0 +1,48 @@
+name: Publish scheduled posts
+
+on:
+  schedule:
+    # 13:00 UTC = 06:00 America/Phoenix (Arizona does not observe DST)
+    - cron: '0 13 * * *'
+    # Backup run 13:00 Phoenix — catches up if GitHub drops the morning run
+    - cron: '0 20 * * *'
+  push:
+    branches: [main]
+    paths: ['posts/**', '*.py', 'site.json', '.github/workflows/publish.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Build site
+        run: python3 build.py
+
+      - name: Commit any newly published posts
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Nothing to publish today."
+            exit 0
+          fi
+          git add -A
+          git commit -m "Publish scheduled posts ($(date -u +%Y-%m-%d))"
+          git push
+
+      - name: Notify Bing (IndexNow) about new posts
+        if: always()
+        continue-on-error: true
+        run: python3 indexnow.py

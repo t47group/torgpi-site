@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="The Office of Ross and Gibson">
+  <rect width="64" height="64" rx="12" fill="#13233a"/>
+  <circle cx="32" cy="32" r="19" fill="none" stroke="#c9a265" stroke-width="2.4"/>
+  <circle cx="32" cy="32" r="14.5" fill="none" stroke="#c9a265" stroke-width=".9" opacity=".55"/>
+  <path d="M23.5 24.5h17v3.2h-6.8V41h-3.4V27.7h-6.8z" fill="#e7d3ad"/>
+  <circle cx="45.2" cy="18.8" r="1.6" fill="#e7d3ad"/>
+</svg>
