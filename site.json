@@ -15,7 +15,7 @@
     33.4925,
     -112.0931
   ],
-  "form_action": "https://formsubmit.co/hello@torgpi.com",
+  "form_action": "https://api.web3forms.com/submit",
   "cta_href": "https://www.torgpi.com/contact/",
   "cta_label": "Free Consultation",
   "cta_head": "Need answers? Start with a confidential conversation.",
@@ -33,5 +33,6 @@
       "https://credit4vets.org/"
     ]
   },
-  "org_sameas": []
+  "org_sameas": [],
+  "form_key": "7c4552a1-df56-4790-b3df-c19387ec6bf4"
 }

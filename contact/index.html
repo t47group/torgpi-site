@@ -291,11 +291,12 @@ body{padding-bottom:54px}}
 <span class="kicker">Confidential consultation</span><h1>Let's talk about what's going on.</h1>
 <p class="lead">Consultations are free and confidential. Prefer to talk now? Call <a href="tel:+16024993230" style="color:#fff;border-bottom:1px solid var(--brass2)">(602) 499-3230</a>.</p></div></section>
 <section><div class="container svc-layout">
-  <form class="form" action="https://formsubmit.co/hello@torgpi.com" method="POST">
-    <input type="hidden" name="_subject" value="New consultation request — torgpi.com">
-    <input type="hidden" name="_next" value="https://www.torgpi.com/contact/thanks/">
-    <input type="hidden" name="_template" value="table">
-    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+  <form class="form" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="7c4552a1-df56-4790-b3df-c19387ec6bf4">
+    <input type="hidden" name="subject" value="New consultation request — torgpi.com">
+    <input type="hidden" name="from_name" value="torgpi.com contact form">
+    <input type="hidden" name="redirect" value="https://www.torgpi.com/contact/thanks/">
+    <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
     <div class="row"><div><label for="n">Full name *</label><input id="n" name="name" required autocomplete="name"></div>
     <div><label for="p">Phone *</label><input id="p" name="phone" type="tel" required autocomplete="tel"></div></div>
     <div class="row"><div><label for="e">Email</label><input id="e" name="email" type="email" autocomplete="email"></div>

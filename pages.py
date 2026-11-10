@@ -288,10 +288,11 @@ def contact():
 <p class="lead">Consultations are free and confidential. Prefer to talk now? Call <a href="tel:{CFG['phone_tel']}" style="color:#fff;border-bottom:1px solid var(--brass2)">{CFG['phone']}</a>.</p></div></section>
 <section><div class="container svc-layout">
   <form class="form" action="{CFG['form_action']}" method="POST">
-    <input type="hidden" name="_subject" value="New consultation request — torgpi.com">
-    <input type="hidden" name="_next" value="{U}/contact/thanks/">
-    <input type="hidden" name="_template" value="table">
-    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+    <input type="hidden" name="access_key" value="{CFG['form_key']}">
+    <input type="hidden" name="subject" value="New consultation request — torgpi.com">
+    <input type="hidden" name="from_name" value="torgpi.com contact form">
+    <input type="hidden" name="redirect" value="{U}/contact/thanks/">
+    <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
     <div class="row"><div><label for="n">Full name *</label><input id="n" name="name" required autocomplete="name"></div>
     <div><label for="p">Phone *</label><input id="p" name="phone" type="tel" required autocomplete="tel"></div></div>
     <div class="row"><div><label for="e">Email</label><input id="e" name="email" type="email" autocomplete="email"></div>
@@ -335,7 +336,7 @@ def privacy():
 <li>Basic, non-identifying website analytics such as pages visited and general location, if analytics are enabled.</li></ul>
 <h2>How we use it</h2><ul><li>To respond to your inquiry and provide the services you request.</li><li>To meet our legal and licensing obligations.</li></ul>
 <p>We do not sell your information. We do not share your inquiry or case information with anyone except as you authorize, as needed to deliver services (for example, to your attorney at your direction), or as required by law.</p>
-<h2>Form processing</h2><p>Our contact form is delivered to us by a third-party form-forwarding service. Please don't include sensitive details in the form; we'll discuss specifics privately.</p>
+<h2>Form processing</h2><p>Our contact form is delivered to us by a third-party form-forwarding service (Web3Forms). Please don't include sensitive details in the form; we'll discuss specifics privately.</p>
 <h2>Contact</h2><p>Questions? Email <a href="mailto:{CFG['email']}">{CFG['email']}</a> or call {CFG['phone']}.</p>
 </div></section>"""
     page("/privacy/", "Privacy Policy | The Office of Ross and Gibson", "How The Office of Ross and Gibson handles information you share with us.", body)
