@@ -10,6 +10,7 @@ cron cannot rot when a pip package changes. Same engine as the other T47 sites.
 - Emits clean URLs: blog/<slug>/index.html, blog/index.html, rss.xml,
   sitemap.xml, robots.txt
 """
+import sys; sys.dont_write_bytecode = True  # keep __pycache__ out of the repo
 import os, re, html, datetime, xml.sax.saxutils as sx
 from chrome import CFG, U, E, head, header, footer, icon, ROOT
 import pages
