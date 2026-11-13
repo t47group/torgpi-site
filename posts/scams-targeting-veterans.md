@@ -6,7 +6,7 @@ kicker: Veterans
 tags: Veterans, Fraud, Scams
 ---
 
-Our founder is a U.S. Air Force veteran and co-founder of a veteran-focused nonprofit, so this topic is personal for us. Veterans are targeted by scammers precisely because they have steady benefits, a strong sense of trust and a willingness to help fellow service members.
+Our founder is a U.S. Army veteran and co-founder of a veteran-focused nonprofit, so this topic is personal for us. Veterans are targeted by scammers precisely because they have steady benefits, a strong sense of trust and a willingness to help fellow service members.
 
 Here are the schemes we see most often and how to protect yourself.
 

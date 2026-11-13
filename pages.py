@@ -58,7 +58,7 @@ def faq_ld(items):
 # ------------------------------------------------------------------ home
 def home(posts):
     trust = [("shield", "Licensed by Arizona DPS", f"Agency #{CFG['agency_license']}"),
-             ("star", "Veteran-Led", "U.S. Air Force veteran founder"),
+             ("star", "Veteran-Led", "U.S. Army veteran founder"),
              ("lock", "100% Confidential", "Discreet from first call to final report"),
              ("doc", "Documented Results", "Time-stamped photo, video & reports")]
     trust_html = "".join(f"<div>{icon(i,26)}<span><b>{a}</b>{b}</span></div>" for i, a, b in trust)
@@ -124,9 +124,9 @@ def home(posts):
 <section><div class="container founder">
   <div class="portrait"><span class="mono">AR</span><span class="tag">Anthony Romero · Founder &amp; Licensed Qualifying Party</span></div>
   <div><span class="kicker">Leadership</span><h2>Led by a veteran. Built on discipline.</h2>
-  <p class="lead" style="margin-top:16px">Anthony Romero served in the United States Air Force and went on to build businesses and co-found Credit4Vets, a veteran-founded nonprofit helping Arizona veterans with credit, housing and financial stability.</p>
+  <p class="lead" style="margin-top:16px">Anthony Romero served in the United States Army and went on to build businesses and co-found Credit4Vets, a veteran-founded nonprofit helping Arizona veterans with credit, housing and financial stability.</p>
   <p style="margin-top:14px;color:var(--muted)">He founded The Office of Ross and Gibson to bring the same mission-first standards — attention to detail, integrity and follow-through — to private investigations.</p>
-  <div class="creds"><span class="chip">{icon('star')}U.S. Air Force Veteran</span><span class="chip">{icon('shield')}AZ DPS Licensed Qualifying Party</span><span class="chip">{icon('family')}Co-Founder, Credit4Vets</span></div>
+  <div class="creds"><span class="chip">{icon('star')}U.S. Army Veteran</span><span class="chip">{icon('shield')}AZ DPS Licensed Qualifying Party</span><span class="chip">{icon('family')}Co-Founder, Credit4Vets</span></div>
   <a class="btn ghost" href="/about/">About our agency {icon('arrow',18)}</a></div>
 </div></section>
 {post_cards(posts)}
@@ -175,7 +175,7 @@ def service(s):
     <li>Regular updates while the investigation is active</li><li>A clear written report with supporting photos, video or records</li></ul>
     <div class="callout"><b>Good to know:</b> {E(s['note'])}</div>
     <h2>Why The Office of Ross and Gibson</h2>
-    <p>We're a licensed Arizona private investigation agency (AZ DPS #{CFG['agency_license']}) led by a U.S. Air Force veteran. That means disciplined planning, lawful methods, careful documentation and honest communication — whether your case takes an afternoon or a month.</p>
+    <p>We're a licensed Arizona private investigation agency (AZ DPS #{CFG['agency_license']}) led by a U.S. Army veteran. That means disciplined planning, lawful methods, careful documentation and honest communication — whether your case takes an afternoon or a month.</p>
   </div>
   <aside class="side">
     <div class="box dark"><h3>Get a confidential consultation</h3><p>Free and no obligation. Tell us what's going on.</p>
@@ -219,8 +219,8 @@ def about():
 <section><div class="container founder" id="anthony">
   <div class="portrait"><span class="mono">AR</span><span class="tag">Anthony Romero · Founder</span></div>
   <div class="prose"><span class="kicker">Our founder</span><h2 style="margin-top:0">Anthony Romero</h2>
-  <div class="creds"><span class="chip">{icon('star')}U.S. Air Force Veteran</span><span class="chip">{icon('shield')}AZ DPS Licensed Qualifying Party</span><span class="chip">{icon('family')}Co-Founder &amp; CEO, Credit4Vets</span></div>
-  <p>Anthony Romero is a United States Air Force veteran with a background in small business and tax finance. After his service he built businesses and co-founded <a href="https://credit4vets.org/" rel="noopener">Credit4Vets</a>, a veteran-founded nonprofit in Tempe that helps veterans with credit, housing, business and financial stability.</p>
+  <div class="creds"><span class="chip">{icon('star')}U.S. Army Veteran</span><span class="chip">{icon('shield')}AZ DPS Licensed Qualifying Party</span><span class="chip">{icon('family')}Co-Founder &amp; CEO, Credit4Vets</span></div>
+  <p>Anthony Romero is a United States Army veteran with a background in small business and tax finance. After his service he built businesses and co-founded <a href="https://credit4vets.org/" rel="noopener">Credit4Vets</a>, a veteran-founded nonprofit in Tempe that helps veterans with credit, housing, business and financial stability.</p>
   <p>Anthony founded The Office of Ross and Gibson to bring the standards he learned in uniform — preparation, attention to detail, integrity and follow-through — to people who need the truth. He serves as the agency's licensed qualifying party with the Arizona Department of Public Safety.</p>
   <p>Whether a client is an attorney on deadline, a business owner facing internal theft or a parent worried about their child, Anthony's approach is the same: listen carefully, tell the truth about what's possible, work within the law, and document everything.</p></div>
 </div></section>
@@ -247,7 +247,7 @@ def about():
               "url": a["url"], "sameAs": a["sameAs"], "worksFor": {"@id": U + "/#org"},
               "description": a["bio"]}
     page("/about/", "About The Office of Ross and Gibson | Veteran-Led Phoenix PI Agency",
-         "Founded by U.S. Air Force veteran Anthony Romero, The Office of Ross and Gibson is an Arizona DPS-licensed private investigation agency in Phoenix.",
+         "Founded by U.S. Army veteran Anthony Romero, The Office of Ross and Gibson is an Arizona DPS-licensed private investigation agency in Phoenix.",
          body, "/about/", [crumb_ld(("About", "/about/")), person])
 
 

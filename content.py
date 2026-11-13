@@ -108,7 +108,7 @@ AUDIENCES = [
   "When it's personal, discretion matters most. We help with infidelity concerns, custody issues, locating loved ones and checking out the people in your life.",
   ["Infidelity and relationship concerns", "Child custody and parenting-time issues", "Locating family members", "Background checks before you trust someone"]),
  ("veterans", "Veterans & Military Families", "shield",
-  "Founded by a U.S. Air Force veteran. We take a special interest in scams that target veterans, locating fellow service members and helping military families get answers.",
+  "Founded by a U.S. Army veteran. We take a special interest in scams that target veterans, locating fellow service members and helping military families get answers.",
   ["Scams targeting veterans and their benefits", "Locating fellow service members", "Background checks on caregivers and contractors", "Referrals to veteran support resources"]),
 ]
 
